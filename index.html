@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Agustín Acosta</title>
+  <meta name="description"
+    content="Portfolio de Agustín Acosta - Data Analyst, Data Science y Web Development. Transformo datos en soluciones.">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Open Graph (para compartir en redes) -->
+  <meta property="og:title" content="Portfolio de Agustín Acosta">
+  <meta property="og:description" content="Data Analyst • Data Science • Web Development">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/preview.png">
+  <meta property="og:url" content="https://tu-dominio.com">
+  <!-- Google Fonts optimizado -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Color de tema para móviles -->
+  <meta name="theme-color" content="#3498db">
+
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="top-nav-inner">
+      <a href="#top" class="brand">Portfolio Agustin</a>
+      <div class="nav-links">
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <span class="menu-toggle">&#9776;</span>
+    </div>
+  </nav>
+
+  <!-- HEADER / HERO -->
+  <header class="hero-box">
+    <div class="hero-content">
+      <h1 class="hero-name">Agustín Sergio Acosta Rodriguez</h1>
+      <h2 class="tagline">
+        <i class="fas fa-laptop-code"></i>Transformo datos en soluciones
+      </h2>
+      <h3 class="tagline-en">
+        <i class="fas fa-database"></i> Turning data into solutions
+      </h3>
+      <p class="subtitle">Software Developer • Data Solutions • IT Support</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn-primary">
+          <i class="fas fa-folder-open"></i> Ver proyectos
+        </a>
+        <a href="https://github.com/AgustinRodr" class="btn-secondary">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="C:\Users\TT\Documents\CV_Agustin_Acosta_Español.pdf" class="btn-tertiary">
+          <i class="fas fa-download"></i> Descargar CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- SOBRE MÍ -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Sobre mí</h2>
+
+      <div class="lang-toggle">
+        <button id="btn-es">Español 🇪🇸</button>
+        <button id="btn-en">English 🇬🇧</button>
+      </div>
+
+      <div class="about-card lang-es active">
+        <h3>Español</h3>
+        <p>
+          Soy desarrollador de software enfocado en crear soluciones prácticas que optimizan procesos y aportan valor. 
+          Me especializo en transformar datos en resultados claros y confiables, con documentación profesional y proyectos fáciles de mantener. 
+          Mi objetivo es aportar eficiencia y calidad en cada desafío tecnológico.
+        </p>
+      </div>
+
+      <div class="about-card lang-en">
+        <h3>English</h3>
+        <p>
+          I am a software developer focused on creating practical solutions that optimize processes and deliver value. 
+          I specialize in transforming data into clear and reliable results, with professional documentation and projects that are easy to maintain. 
+          My goal is to bring efficiency and quality to every technological challenge.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- HABILIDADES -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Developer Arsenal 🛠️</h2>
+      <h3>💻Codebase</h3>
+      <div class="swiper lenguajes-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide skill-card python">
+            <img src="images/logos/python-logo.svg" alt="Python logo" class="skill-icon">
+            <p>Python</p>
+            <span class="badge avanzado">Avanzado</span>
+          </div>
+          <div class="swiper-slide skill-card c">
+            <img src="images/logos/c_logo.svg" alt="C logo" class="skill-icon">
+            <p>C</p>
+            <span class="badge avanzado">Avanzado</span>
+          </div>
+          <div class="swiper-slide skill-card csharp">
+            <img src="images/logos/csharp_logo.svg" alt="C# logo" class="skill-icon">
+            <p>C Sharp</p>
+            <span class="badge basico">Básico</span>
+          </div>
+          <div class="swiper-slide skill-card javascript">
+            <img src="images/logos/javascript_logo.svg" alt="JavaScript logo" class="skill-icon">
+            <p>JavaScript</p>
+            <span class="badge avanzado">Avanzado</span>
+          </div>
+          <div class="swiper-slide skill-card html">
+            <img src="images/logos/html5_logo.svg" alt="HTML5 logo" class="skill-icon">
+            <p>HTML</p>
+            <span class="badge avanzado">Avanzado</span>
+          </div>
+          <div class="swiper-slide skill-card css">
+            <img src="images/logos/css_logo.svg" alt="CSS logo" class="skill-icon">
+            <p>CSS</p>
+            <span class="badge avanzado">Avanzado</span>
+          </div>
+        </div>
+        <!-- Flechas y paginación van aquí -->
+        <div class="swiper-button-next lenguajes-next"></div>
+        <div class="swiper-button-prev lenguajes-prev"></div>
+        <div class="swiper-pagination lenguajes-pagination"></div>
+      </div>
+      
+      <h3>🔧Systems & Utilities</h3>
+        <div class="swiper herramientas-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide skill-card sql">
+              <img src="images/logos/sql_logo.svg" alt="SQL logo" class="skill-icon">
+              <p>SQL</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card ml">
+              <img src="images/logos/machine_learning_logo.svg" alt="Machine Learning logo" class="skill-icon">
+              <p>ML</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card numpy">
+              <img src="images/logos/numpy_logo.svg" alt="NumPy logo" class="skill-icon">
+              <p>NumPy</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card mysql">
+              <img src="images/logos/mysql_logo.svg" alt="MySQL logo" class="skill-icon">
+              <p>MySQL</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card docker">
+              <img src="images/logos/docker_logo.svg" alt="Docker logo" class="skill-icon">
+              <p>Docker</p>
+              <span class="badge basico">Basico</span>
+            </div>
+            <div class="swiper-slide skill-card git">
+              <img src="images/logos/git_logo.svg" alt="Git logo" class="skill-icon">
+              <p>Git</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card github">
+              <img src="images/logos/github_logo.svg" alt="GitHub logo" class="skill-icon">
+              <p>GitHub</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card linux">
+              <img src="images/logos/linux_logo.svg" alt="Linux logo" class="skill-icon">
+              <p>Hacking</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card wireshark">
+              <img src="images/logos/wireshark_logo.svg" alt="WireShark logo" class="skill-icon">
+              <p>WireShark</p>
+              <span class="badge basico">Intermedio</span>
+            </div>
+            <div class="swiper-slide skill-card postgresql">
+              <img src="images/logos/postgresql_logo.svg" alt="PostgreSQL logo" class="skill-icon">
+              <p>PostgreSQL</p>
+              <span class="badge intermedio">Intermedio</span>
+            </div>
+          </div>
+        <!-- Flechas y paginación -->
+        <div class="swiper-button-next herramientas-next"></div>
+        <div class="swiper-button-prev herramientas-prev"></div>
+        <div class="swiper-pagination herramientas-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="projects" class="section section-light">
+    <div class="container">
+      <h2>🚀 Proyectos</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>👾 Galaga Python</h3>
+          <p>Implementación del clásico videojuego Galaga en Python, utilizando programación orientada a objetos y
+            librerías gráficas para recrear la jugabilidad retro.</p>
+
+          <!-- Imagen o video -->
+          <div class="project-media">
+            <img src="images/projects/galaga_screenshoot1.png" alt="Galaga Python Screenshot">
+            <!--  video corto -->
+            <!-- <video controls>
+            <source src="videos/galaga_demo.mp4" type="video/mp4">
+            </video> -->
+          </div>
+          <!-- Botones -->
+          <div class="project-links">
+            <a href="demo.html" target="_blank" class="btn">Ver proyecto</a>
+            <a href="https://github.com/AgustinRodr/galaga_python" target="_blank" class="btn btn-github">Ver código en
+              GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>☕ Starbucks Analysis</h3>
+          <p>Análisis de datos de Starbucks con Python y visualización de patrones de consumo.</p>
+          <div class="project-media">
+            <img src="images/projects/starbucks_dashboard.png" alt="Starbucks Analysis Dashboard">
+          </div>
+
+          <!-- Botones -->
+          <div class="project-links">
+            <a href="demo.html" target="_blank" class="btn">Ver proyecto</a>
+            <a href="https://github.com/AgustinRodr/starbucks_analysis" target="_blank" class="btn btn-github">Ver
+              código en GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>📊 Video Game Sales Analysis</h3>
+          <p>Análisis de ventas de videojuegos usando Python y Machine Learning.</p>
+          <!-- Imagen del proyecto -->
+          <div class="project-media">
+            <img src="images/projects/videogames_dashboard.png" alt="Videogames Dashboard">
+          </div>
+          <!-- Botones -->
+          <div class="project-links">
+            <a href="demo.html" target="_blank" class="btn">Ver proyecto</a>
+            <a href="https://github.com/AgustinRodr/video_games_sales_analisys" target="_blank" class="btn btn-github">Ver
+              código en GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>📬 Contacto</h2>
+      <p>Email: <a href="mailto:accosta.agustiin@gmail.com">accosta.agustiin@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/agustin-acosta-a4224a26b/" target="_blank">Agustín Acosta</a></p>
+      <p>Banfield, Argentina</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Agustín Acosta – Todos los derechos reservados</p>
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <!-- Tu script separado -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
