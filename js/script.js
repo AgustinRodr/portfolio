@@ -68,3 +68,40 @@ const swiperHerramientas = new Swiper('.herramientas-swiper', {
 });
 
 
+function createCarousel(imgId, images, prevClass, nextClass) {
+  let index = 0;
+  const imgElement = document.getElementById(imgId);
+
+  function showImage(i) {
+    imgElement.src = images[i];
+  }
+
+  document.querySelector(prevClass).addEventListener("click", () => {
+    index = (index - 1 + images.length) % images.length;
+    showImage(index);
+  });
+
+  document.querySelector(nextClass).addEventListener("click", () => {
+    index = (index + 1) % images.length;
+    showImage(index);
+  });
+}
+
+// Galaga
+const galagaImages = [
+  "images/projects/galaga_screenshoot1.png",
+  "images/projects/galaga_screenshoot2.png",
+  "images/projects/galaga_screenshoot3.png",
+  "images/projects/galaga_screenshoot4.png",
+  "images/projects/galaga_screenshoot5.png"
+];
+createCarousel("galaga-image", galagaImages, ".galaga-prev", ".galaga-next");
+
+// Starbucks
+const starbucksImages = [
+  "images/projects/starbucks_dashboard1.png",
+  "images/projects/starbucks_dashboard2.png",
+  "images/projects/starbucks_dashboard3.png"
+];
+createCarousel("starbucks-image", starbucksImages, ".starbucks-prev", ".starbucks-next");
+

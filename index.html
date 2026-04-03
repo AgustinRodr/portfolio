@@ -36,6 +36,7 @@
       <div class="nav-links">
         <a href="#about">About Me</a>
         <a href="#skills">Skills</a>
+        <a href="#timeline">Timeline</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
@@ -206,64 +207,153 @@
     </div>
   </section>
 
+  <section id="timeline" class="section section-dark">
+    <div class="container">
+      <h2>📈 Timeline</h2>
+      <div class="timeline-card">
+        <div class="timeline">
+  
+          <div class="timeline-item js">
+            <div class="timeline-content">
+              <h3>2022 – 🌐 JavaScript</h3>
+              <p>Ingreso a la facultad, primer contacto con la programación.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-item c">
+            <div class="timeline-content">
+              <h3>2022 – Inicio en C con Eclipse IDE</h3>
+              <p>Fundamentos y estructuras.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-item arduino">
+            <div class="timeline-content">
+              <h3>2022 – 🔌 Arduino</h3>
+              <p>Electrónica básica en proyectos prácticos.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-item python">
+            <div class="timeline-content">
+              <h3>2023 – 👾 Galaga Python</h3>
+              <p>Primer proyecto grande en Python (OOP + librerías gráficas).</p>
+            </div>
+          </div>
+  
+          <div class="timeline-item starbucks">
+            <div class="timeline-content">
+              <h3>2024 – ☕ Starbucks Analysis</h3>
+              <p>Análisis de datos con Python y Pandas.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-item videogamesales">
+            <div class="timeline-content">
+              <h3>2025 – 📊 Video Game Sales Analysis</h3>
+              <p>Predicción de ventas con Machine Learning.</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- PROYECTOS -->
   <section id="projects" class="section section-light">
     <div class="container">
       <h2>🚀 Proyectos</h2>
-
+   
       <div class="projects-grid">
-
-        <div class="project-card">
-          <h3>👾 Galaga Python</h3>
-          <p>Implementación del clásico videojuego Galaga en Python, utilizando programación orientada a objetos y
-            librerías gráficas para recrear la jugabilidad retro.</p>
-
-          <!-- Imagen o video -->
-          <div class="project-media">
-            <img src="images/projects/galaga_screenshoot1.png" alt="Galaga Python Screenshot">
-            <!--  video corto -->
-            <!-- <video controls>
-            <source src="videos/galaga_demo.mp4" type="video/mp4">
-            </video> -->
+  
+        <div class="project-card alt">
+          <!-- Columna izquierda: texto -->
+          <div class="project-info">
+            <h3 class="project-title">👾 Galaga Python</h3>
+            <p class="project-tagline">Videojuego retro en Python con OOP.</p>
+            <p class="project-description">
+              Implementado con Pygame, incluye gestión de sprites, colisiones y lógica de niveles.
+              Este proyecto me permitió afianzar conceptos de OOP y diseño de videojuegos.
+            </p>
+            <div class="tech-stack">
+              <span class="badge">Python</span>
+              <span class="badge">Pygame</span>
+              <span class="badge">OOP</span>
+            </div>
           </div>
-          <!-- Botones -->
-          <div class="project-links">
-            <a href="demo.html" target="_blank" class="btn">Ver proyecto</a>
-            <a href="https://github.com/AgustinRodr/galaga_python" target="_blank" class="btn btn-github">Ver código en
-              GitHub</a>
+        
+          <!-- Columna derecha: imagen -->
+          <div class="project-media">
+            <img id="galaga-image" src="images/projects/galaga_screenshoot1.png" alt="Galaga Python Screenshot">
+        
+            <div class="carousel-controls">
+              <button class="galaga-prev">◀</button>
+              <button class="galaga-next">▶</button>
+            </div>
+          
+            <div class="project-links">
+              <a href="demo.html" class="btn btn-demo">Ver proyecto</a>
+              <a href="https://github.com/AgustinRodr/galaga_python" class="btn btn-github">Ver código en GitHub</a>
+              <a href="videos/galaga_demo.mp4" class="btn btn-video">Ver demo en video</a>
+            </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <h3>☕ Starbucks Analysis</h3>
-          <p>Análisis de datos de Starbucks con Python y visualización de patrones de consumo.</p>
+        <!-- Starbucks Analysis -->
+        <div class="project-card alt">
+          <div class="project-info">
+            <h3 class="project-title">☕ Starbucks Analysis</h3>
+            <p class="project-tagline">Dashboard interactivo con Pandas y visualización.</p>
+            <p class="project-description">
+              Proyecto de análisis de datos de Starbucks utilizando Python y Pandas.
+              Incluye visualizaciones con Matplotlib y un dashboard interactivo para
+              explorar patrones de consumo y gasto promedio por tamaño de carrito.
+            </p>
+        
+            <div class="tech-stack">
+              <span class="badge">Python</span>
+              <span class="badge">Pandas</span>
+              <span class="badge">Matplotlib</span>
+            </div>
+          </div>
+        
           <div class="project-media">
-            <img src="images/projects/starbucks_dashboard.png" alt="Starbucks Analysis Dashboard">
-          </div>
-
-          <!-- Botones -->
-          <div class="project-links">
-            <a href="demo.html" target="_blank" class="btn">Ver proyecto</a>
-            <a href="https://github.com/AgustinRodr/starbucks_analysis" target="_blank" class="btn btn-github">Ver
-              código en GitHub</a>
-          </div>
+            <img id="starbucks-image" src="images/projects/starbucks_dashboard1.png" alt="Starbucks Analysis Dashboard">
+              <!-- Flechitas centradas debajo -->
+            <div class="carousel-controls">
+              <button class="starbucks-prev">◀</button>
+              <button class="starbucks-next">▶</button>
+            </div>
+            <!-- Botones centrados debajo -->
+            <div class="project-links">
+              <a href="demo.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
+              <a href="https://github.com/AgustinRodr/starbucks_analysis" target="_blank" class="btn btn-github">
+              Ver código en GitHub
+              </a>
+            </div>
+          </div>  
         </div>
 
+        <!-- Video Game Sales Analysis -->
         <div class="project-card">
           <h3>📊 Video Game Sales Analysis</h3>
-          <p>Análisis de ventas de videojuegos usando Python y Machine Learning.</p>
-          <!-- Imagen del proyecto -->
+          <p class="project-tagline">Predicción de ventas con Machine Learning.</p>
           <div class="project-media">
             <img src="images/projects/videogames_dashboard.png" alt="Videogames Dashboard">
           </div>
-          <!-- Botones -->
+          <div class="tech-stack">
+            <span class="badge">Python</span>
+            <span class="badge">Scikit-learn</span>
+            <span class="badge">Machine Learning</span>
+          </div>
           <div class="project-links">
-            <a href="demo.html" target="_blank" class="btn">Ver proyecto</a>
+            <a href="demo.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
             <a href="https://github.com/AgustinRodr/video_games_sales_analisys" target="_blank" class="btn btn-github">Ver
               código en GitHub</a>
           </div>
         </div>
-
+  
       </div>
     </div>
   </section>
