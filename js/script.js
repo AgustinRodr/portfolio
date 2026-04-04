@@ -105,3 +105,11 @@ const starbucksImages = [
 ];
 createCarousel("starbucks-image", starbucksImages, ".starbucks-prev", ".starbucks-next");
 
+// VideoGameSales
+const gameSalesImages = [
+  "images/projects/videogames_dashboard1.png",
+  "images/projects/videogames_dashboard2.png",
+  "images/projects/videogames_dashboard3.png",
+  "images/projects/videogames_dashboard4.png"
+];
+createCarousel("videogames-image", gameSalesImages, ".videogames-prev", ".videogames-next");
