@@ -90,7 +90,7 @@
         <a href="C:\Users\TT\Documents\CV_Agustin_Acosta_Español.pdf" class="btn-tertiary">
           <i class="fas fa-download"></i> Descargar CV
         </a>
-        <a href="#contacto" class="btn-secondary">
+        <a href="#contact" class="btn-secondary">
           Contratar servicio
         </a>
       </div>
@@ -237,7 +237,7 @@
 
   <section id="timeline" class="section section-dark">
     <div class="container">
-      <h2>📈 Timeline</h2>
+      <h2>Timeline</h2>
       <div class="timeline-card">
         <div class="timeline">
   
@@ -291,7 +291,7 @@
   <!-- PROYECTOS -->
   <section id="projects" class="section section-light">
     <div class="container">
-      <h2>🚀 Proyectos</h2>
+      <h2>Proyectos</h2>
    
       <div class="projects-grid">
   
@@ -321,9 +321,9 @@
             </div>
           
             <div class="project-links">
-              <a href="demo.html" class="btn btn-demo">Ver proyecto</a>
+              <a href="under-construction.html" class="btn btn-demo">Ver proyecto</a>
               <a href="https://github.com/AgustinRodr/galaga_python" class="btn btn-github">Ver código en GitHub</a>
-              <a href="videos/galaga_demo.mp4" class="btn btn-video">Ver demo en video</a>
+              <a href="under-construction.html" class="btn btn-video">Ver demo en video</a>
             </div>
           </div>
         </div>
@@ -355,7 +355,7 @@
             </div>
             <!-- Botones centrados debajo -->
             <div class="project-links">
-              <a href="demo.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
+              <a href="under-construction.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
               <a href="https://github.com/AgustinRodr/starbucks_analysis" target="_blank" class="btn btn-github">
               Ver código en GitHub
               </a>
@@ -393,7 +393,7 @@
             </div>
             <!-- Botones centrados debajo -->
             <div class="project-links">
-              <a href="demo.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
+              <a href="under-construction.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
               <a href="https://github.com/AgustinRodr/video_games_sales_analisys" target="_blank" class="btn btn-github">
               Ver código en GitHub
               </a>
@@ -405,23 +405,121 @@
   </section>
 
   <!-- CONTACTO -->
-  <section id="contact" class="section">
+  <section id="contact" class="section contact-section">
     <div class="container">
-      <h2>📬 Contacto</h2>
-      <p>Email: <a href="mailto:accosta.agustiin@gmail.com">accosta.agustiin@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/agustin-acosta-a4224a26b/" target="_blank">Agustín Acosta</a></p>
-      <p>Banfield, Argentina</p>
+      <h2>Hablemos de tu proyecto</h2>
+  
+      <!-- Formulario de contacto -->
+      <form id="contactForm" action="https://formspree.io/f/mojppvjl" method="POST" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error" id="error-name"></span>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error" id="error-email"></span>
+        </div>
+  
+        <div class="form-group">
+          <label for="service">¿Qué necesitás?</label>
+          <select id="service" name="service" required>
+            <option value="">Seleccioná una opción...</option>
+        
+            <optgroup label="🌐 Desarrollo Web">
+              <option value="web">Web rápida</option>
+              <option value="full-web">Sitio completo (responsive, modular)</option>
+              <option value="maintenance">Mantenimiento</option>
+            </optgroup>
+        
+            <optgroup label="⚙️ IT & Automatización">
+              <option value="it">Soporte IT</option>
+              <option value="automation">Automatización</option>
+              <option value="chatbots">Chatbots</option>
+            </optgroup>
+        
+            <optgroup label="📊 Data & Programación">
+              <option value="sql">Bases de datos</option>
+              <option value="datascience">Data Science / ML</option>
+            </optgroup>
+        
+            <optgroup label="🎨 Diseño & UX">
+              <option value="uiux">UI/UX refinamiento</option>
+              <option value="forms">Formularios seguros</option>
+            </optgroup>
+          </select>
+          <span class="error" id="error-service"></span>
+        </div>
+  
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="4" placeholder="Escribe tu consulta..." required></textarea>
+          <span class="error" id="error-message"></span>
+        </div>
+  
+        <button type="submit" class="btn-contact">Contactame</button>
+      </form>
+      <!-- hCaptcha (tema oscuro) -->
+      <div class="h-captcha" 
+         data-sitekey="b3a63b2a-cc2e-4e12-90ca-897899065dae" 
+         data-size="invisible" 
+         data-callback="onCaptchaSuccess">
+      </div>
+      <!-- Script de hCaptcha -->
+      <script src="https://hcaptcha.com/1/api.js" async defer></script>
     </div>
   </section>
+  
+  <!-- Toast flotante -->
+  <div id="toast" class="toast">✅ ¡Mensaje enviado!</div>
 
-  <footer>
-    <div class="container">
-      <p>© 2026 Agustín Acosta – Todos los derechos reservados</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+  
+      <!-- Columna izquierda: Portfolio -->
+      <div class="footer-col footer-left">
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna derecha: legal -->
+      <div class="footer-col footer-right">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#privacidad">Política de Privacidad</a></li>
+          <li><a href="#terminos">Términos de Uso</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- Bloque inferior: iconos + copyright -->
+    <div class="footer-bottom">
+      <div class="social-links">
+        <a href="mailto:accosta.agustiin@gmail.com" target="_blank" aria-label="Gmail"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/AgustinRodr" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://wa.me/5491127394641?text=Hola%20Agustín,%20quiero%20consultarte%20sobre%20tu%20portfolio" 
+          target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://instagram.com/tuusuario" target="_blank" aria-label="Instagram"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://linkedin.com/in/agustin-acosta-a4224a26b/" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin"></i></a>
+      </div>
+       <p class="location"> Buenos Aires, Argentina</p>
+       <p class="copyright">© 2026 Agustín Sergio Acosta Rodriguez– Todos los derechos reservados</p>
     </div>
   </footer>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
 </body>
-
 </html>
