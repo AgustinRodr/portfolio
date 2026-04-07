@@ -68,7 +68,6 @@ body {
   transform: scale(1.05);
 }
 
-/* Links */
 /* Links en desktop */
 .nav-links {
   display: flex;
@@ -144,7 +143,7 @@ body {
   }
 
   .nav-links a:last-child {
-    border-bottom: none;    /* el último link sin línea */
+    border-bottom: none;    /* el ultimo link sin lisnea */
   }
 
   .menu-toggle {
@@ -300,14 +299,61 @@ body {
   box-shadow: 0 0 18px rgba(221, 36, 118, 0.8);
 }
 
-
 .btn-tertiary {
   background: linear-gradient(135deg, #00c6ff, #00ff9d);
   color: #fff;
+  border-radius: 8px;
+  padding: 12px 10px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s ease;
 }
 
-.btn-tertiary:hover {
-  background-color: #27ae60;
+.btn-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.btn-dropdown .btn-tertiary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* se despliega hacia abajo */
+  left: 0;
+  width: 100%; /* igual ancho que el botón */
+  background: linear-gradient(135deg, #00c6ff, #0049a3, #4a00e0);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  min-width: 180px;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.dropdown-menu.show {
+  display: block;
 }
 
 .strengths {
@@ -343,7 +389,7 @@ body {
   transform: translateY(-5px);
 }
 
-/* 📱 Ajustes para pantallas */
+/*Ajustes para pantallas */
 @media (max-width: 768px) {
   .hero-box {
     padding: 70px;
@@ -367,10 +413,29 @@ body {
     width: 100%; 
     text-align: center;
   }
+
+  .hero-buttons a,
+  .btn-tertiary {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .dropdown-menu a {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+  }
+
+  .btn-primary, .btn-secondary, .btn-tertiary {
+    border-radius: 4px;
+    font-weight: 600;
+  }
 }
 
-/* 📱 Ajustes específicos para celulares muy chicos */
-@media (max-width: 480px) {
+/*Ajustes específicos para celulares muy chicos */
+@media (max-width: 380px) {
   .hero-box {
     padding: 50px;
     margin: 90px auto 40px;
@@ -400,10 +465,18 @@ body {
     margin-top: 15px;
   }
 
-  .hero-buttons a {
+  .hero-buttons a,
+  .btn-tertiary {
     width: 100%;
     padding: 10px 0;
     font-size: 0.9rem;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  .dropdown-menu a {
+    font-size: 0.9rem;
+    padding: 10px 14px;
   }
 
   .btn-primary, .btn-secondary, .btn-tertiary {
@@ -622,10 +695,10 @@ body {
 /* ===== SKILLS ===== */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 24px;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+
+
 }
 
 .skill-card {
@@ -633,8 +706,24 @@ body {
   padding: 14px;
   border-radius: 20px;
   text-align: center;
+  min-height: 160px;   /* 👈 asegura que todas tengan la misma altura */
   color: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.skill-card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.skill-card h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: var(--accent);
+}
+.skill-card span {
+  font-size: 0.85rem;
+  color: var(--text-light);
 }
 
 .skill-icon {
@@ -706,9 +795,17 @@ body {
   color: #fff;
 }
 
-.badge.basico { background-color: #3498db; }     /* verde */
-.badge.intermedio { background-color: #7bed9f; } /* naranja */
-.badge.avanzado { background-color: #e67e22; }   /* rojo */
+/* ===== BADGES PARA SKILLS ===== */
+.skill-card .badge.basico {
+  background-color: #3498db;   /* azul */
+}
+.skill-card .badge.intermedio {
+  background-color: #873abb;   /* verde claro */
+}
+.skill-card .badge.avanzado {
+  background-color: #e67e22;   /* naranja */
+}
+
 
 .swiper-pagination {
   display: none !important;
@@ -782,6 +879,64 @@ body {
   }
 }
 
+/* Ajustes responsive para Skills en móviles */
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;   /* una tarjeta por fila */
+    gap: 12px;                    /* menos espacio entre cards */
+    margin-top: 10px;
+  }
+
+  .skill-card {
+    padding: 10px;
+    font-size: 0.85rem;
+    border-radius: 14px;
+    min-height: 140px;            /* altura más compacta */
+  }
+
+  .skill-icon {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 6px;
+  }
+
+  .skill-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+
+  .skill-card span.badge {
+    font-size: 10px;
+    padding: 2px 6px;             /* badges mas chicas */
+    border-radius: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;   /* flechas invisibles */
+  }
+
+  .swiper-pagination {
+    display: block !important;   /* asegura que se muestre */
+    position: relative !important; /* cambia de absolute a relative */
+    bottom: 0 !important;         /* resetea la posición */
+    margin-top: 12px;             /* espacio entre cards y paginación */
+    text-align: center;           /* centrado */
+  }
+
+
+  .swiper-pagination-bullet {
+  background-color: #ffffff !important;
+  opacity: 0.6 !important;
+  }
+
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent) !important; 
+  opacity: 1 !important;
+  }
+}
+
 /* ===== TIMELINE ===== */
 .timeline {
   position: relative;
@@ -820,7 +975,7 @@ body {
   content: "";
   position: absolute;
   left: 15px; /* centrada respecto a los marcadores */
-  top: 10px;   /* empieza un poco más abajo */
+  top: 10px;   /* empieza un poco mas abajo */
   bottom: 10px; /* termina un poco antes */
   width: 3px;
   height: 100%;
@@ -849,7 +1004,7 @@ body {
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -7px; /* alineado con la línea */
+  left: -7px; /* alineado con la linea */
   top: 0;
   width: 20px;
   height: 20px;
@@ -858,8 +1013,6 @@ body {
   z-index: 1;
 }
 
-
-/* Colores por hito */
 .timeline-item.js::before {
   background-color: #F7DF1E;
 }
@@ -1089,7 +1242,7 @@ body {
   margin-bottom: 15px;
 }
 
-/* 📱 Tablets */
+/*Tablets */
 @media (max-width: 768px) {
   .project-title {
     font-size: 1.4rem;
@@ -1117,7 +1270,7 @@ body {
   }
 }
 
-/* 📱 Celulares chicos */
+/*Celulares chicos */
 @media (max-width: 480px) {
   .project-title {
     font-size: 1.3rem;     
@@ -1190,13 +1343,17 @@ body {
   font-size: 0.9rem;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
-.badge:nth-child(1) { background-color: #3776AB; } /* Python */
-.badge:nth-child(2) { background-color: #0099CC; } /* Pygame */
-.badge:nth-child(3) { background-color: #68217A; } /* OOP */
+
+.tech-stack .badge:nth-child(1) { background-color: #3776AB; } /* Python */
+.tech-stack .badge:nth-child(2) { background-color: #0099CC; } /* Pygame */
+.tech-stack .badge:nth-child(3) { background-color: #68217A; } /* OOP */
+
 .tech-stack .badge:hover {
   transform: scale(1.05);
   filter: brightness(1.1);
 }
+
+
 
 /* ===== BOTONES ===== */
 .project-links,
@@ -1260,7 +1417,7 @@ body {
   background: var(--primary);
 }
 
-/* 📱 Ajustes para tablets */
+/*Ajustes para tablets */
 @media (max-width: 768px) {
   .tech-stack {
     display: flex;
@@ -1287,7 +1444,7 @@ body {
   }
 }
 
-/* 📱 Ajustes para celulares chicos */
+/* Ajustes para celulares chicos */
 @media (max-width: 480px) {
   .tech-stack {
     flex-wrap: wrap;
@@ -1332,9 +1489,9 @@ body {
 }
 
 .project-media img {
-  max-width: 700px;     /* limite para que no se agrande demasiado */
-  height: 400px;        /* altura fija para uniformidad */
-  object-fit: cover;    /* recorta sin deformar */
+  max-width: 700px;     
+  height: 400px;        
+  object-fit: cover;    
   border-radius: 10px;
   border: 1px solid #1f2a44;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
@@ -1365,7 +1522,7 @@ body {
   background: var(--primary);
 }
 
-/* 🔹 Evitar que queden marcadas en móvil */
+/* Evitar que queden marcadas en movil */
 .carousel-controls button:focus,
 .carousel-controls button:active {
   outline: none;       /* quita el borde de enfoque */
@@ -1374,7 +1531,7 @@ body {
 }
 
 
-/* 📱 Tablets y pantallas medianas */
+/*Tablets y pantallas medianas */
 @media (max-width: 768px) {
   #projects h2 {
     font-size: 1.8rem;
@@ -1406,7 +1563,7 @@ body {
   }
 
   .project-info {
-    text-align: center; /* centramos texto en pantallas medianas */
+    text-align: center;
   }
 }
 
@@ -1420,10 +1577,10 @@ body {
   .carousel-controls button {
     width: 50px;          
     height: 50px;
-    font-size: 0.9rem;    /* flecha más chica */
+    font-size: 0.9rem;    /* flecha mas chica */
   }
 
-  /* 🔹 Evitar highlight en móviles */
+  /*Evitar highlight en móviles */
   .carousel-controls button {
     -webkit-tap-highlight-color: transparent; /* quita el highlight azul en iOS/Android */
   }
@@ -1470,15 +1627,15 @@ body {
 }
 
 .contact-section h2 {
-  font-family: 'Montserrat', sans-serif; /* tipografía moderna */
-  font-size: 2.0rem; /* más grande que antes */
-  font-weight: 700;  /* más gruesa para destacar */
-  color: var(--accent);    /* color acento, podés cambiarlo */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.0rem; 
+  font-weight: 700;  
+  color: var(--accent);    
   margin-bottom: 30px;
   margin-top: 30px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 1px; /* un poco de espaciado para estilo */
+  letter-spacing: 1px; 
   position: relative;
 }
 
@@ -1492,7 +1649,7 @@ body {
   border-radius: 2px;
 }
 
-/* Formulario */
+/* Form */
 .contact-form {
   max-width: 800px; /* más compacto */
   width: 100%;
@@ -1624,7 +1781,7 @@ body {
     margin-top: 10px;
   }
 }
-/* Responsive para móviles */
+/* Responsive para pantallas mas chicas */
 @media (max-width: 480px) {
   .contact-section {
     padding: 20px 15px;
@@ -1633,7 +1790,7 @@ body {
   .contact-form input,
   .contact-form select,
   .contact-form textarea {
-    width: 90%;        /* ocupa todo el ancho en móvil */
+    width: 90%;        
     max-width: 100%;    /* sin límite */
   }
 
@@ -1662,6 +1819,7 @@ body {
 .toast {
   visibility: hidden;
   min-width: 250px;
+  max-width: 90%; /* nunca más ancho que el viewport */
   background: #4CAF50;
   color: #fff;
   text-align: center;
@@ -1678,6 +1836,27 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
+/*Celulares muy chicos */
+@media (max-width: 480px) {
+  .toast {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%); /* centrado horizontal */
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+/*Tablets medianas */
+@media (max-width: 768px) {
+  .toast {
+    right: 10px; /* más pegado al borde */
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
 
 /* ===== FOOTER ===== */
 .footer {

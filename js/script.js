@@ -5,6 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
   menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
   });
+
+  const toggleBtn = document.getElementById("cv-toggle");
+  const menu = document.getElementById("cv-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    menu.classList.toggle("show");
+  });
+
+  // Cerrar el menú si se hace click fuera
+  document.addEventListener("click", (e) => {
+    if (!toggleBtn.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.remove("show");
+    }
+  });
 });
 
 const btnEs = document.getElementById('btn-es');
@@ -175,14 +189,18 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Callback que hCaptcha llama si la verificación fue exitosa
+// Callback que hCaptcha llama si la verificación fue exitosa
 async function onCaptchaSuccess(token) {
   const form = document.getElementById("contactForm");
   const toast = document.getElementById("toast");
 
+  const formData = new FormData(form);
+  formData.append("h-captcha-response", token); // 👈 importante
+
   try {
     const response = await fetch(form.action, {
       method: form.method,
-      body: new FormData(form),
+      body: formData, // usar la variable con el token
       headers: { 'Accept': 'application/json' }
     });
 
@@ -191,9 +209,11 @@ async function onCaptchaSuccess(token) {
       setTimeout(() => toast.classList.remove("show"), 3000);
       form.reset();
     } else {
-      document.getElementById("error-message").textContent = "Error al enviar el formulario. Intenta más tarde.";
+      document.getElementById("error-message").textContent =
+        "Error al enviar el formulario. Intenta más tarde.";
     }
   } catch (error) {
-    document.getElementById("error-message").textContent = "Error de conexión. Revisa tu internet.";
+    document.getElementById("error-message").textContent =
+      "Error de conexión. Revisa tu internet.";
   }
 }

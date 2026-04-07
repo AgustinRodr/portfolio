@@ -87,9 +87,20 @@
         <a href="#projects" class="btn-primary">
           <i class="fas fa-folder-open"></i> Ver proyectos
         </a>
-        <a href="C:\Users\TT\Documents\CV_Agustin_Acosta_Español.pdf" class="btn-tertiary">
-          <i class="fas fa-download"></i> Descargar CV
-        </a>
+        <!-- Botón con menú moderno -->
+        <div class="btn-dropdown">
+          <button id="cv-toggle" class="btn-tertiary">
+            <i class="fas fa-download"></i> Descargar CV
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div id="cv-menu" class="dropdown-menu">
+            <a href="assets/cv/CV_Agustin_Acosta_Español.pdf" download>CV Español</a>
+            <a href="assets/cv/CV_Agustin_Acosta_English.pdf" download>Resume English</a>
+          </div>
+        </div>
+
+
+
         <a href="#contact" class="btn-secondary">
           Contratar servicio
         </a>
@@ -179,7 +190,7 @@
             <div class="swiper-slide skill-card sql">
               <img src="images/logos/sql_logo.svg" alt="SQL logo" class="skill-icon">
               <p>SQL</p>
-              <span class="badge intermedio">Intermedio</span>
+              <span class="badge avanzado">Avanzado</span>
             </div>
             <div class="swiper-slide skill-card ml">
               <img src="images/logos/machine_learning_logo.svg" alt="Machine Learning logo" class="skill-icon">
@@ -199,7 +210,7 @@
             <div class="swiper-slide skill-card docker">
               <img src="images/logos/docker_logo.svg" alt="Docker logo" class="skill-icon">
               <p>Docker</p>
-              <span class="badge basico">Basico</span>
+              <span class="badge intermedio">Intermedio</span>
             </div>
             <div class="swiper-slide skill-card git">
               <img src="images/logos/git_logo.svg" alt="Git logo" class="skill-icon">
@@ -209,22 +220,17 @@
             <div class="swiper-slide skill-card github">
               <img src="images/logos/github_logo.svg" alt="GitHub logo" class="skill-icon">
               <p>GitHub</p>
-              <span class="badge intermedio">Intermedio</span>
+              <span class="badge avanzado">Avanzado</span>
             </div>
             <div class="swiper-slide skill-card linux">
               <img src="images/logos/linux_logo.svg" alt="Linux logo" class="skill-icon">
               <p>Hacking</p>
-              <span class="badge intermedio">Intermedio</span>
-            </div>
-            <div class="swiper-slide skill-card wireshark">
-              <img src="images/logos/wireshark_logo.svg" alt="WireShark logo" class="skill-icon">
-              <p>WireShark</p>
-              <span class="badge basico">Intermedio</span>
+              <span class="badge avanzado">Avanzados</span>
             </div>
             <div class="swiper-slide skill-card postgresql">
               <img src="images/logos/postgresql_logo.svg" alt="PostgreSQL logo" class="skill-icon">
               <p>PostgreSQL</p>
-              <span class="badge intermedio">Intermedio</span>
+              <span class="badge avanzado">Avanzado</span>
             </div>
           </div>
         <!-- Flechas y paginación -->
@@ -258,7 +264,7 @@
           <div class="timeline-item arduino">
             <div class="timeline-content">
               <h3>2022 – 🔌 Arduino</h3>
-              <p>Electrónica básica en proyectos prácticos.</p>
+              <p>Electrónica básica en proyectos prácticos. Utilizando Tinkercad</p>
             </div>
           </div>
   
@@ -268,20 +274,29 @@
               <p>Primer proyecto grande en Python (OOP + librerías gráficas).</p>
             </div>
           </div>
-  
-          <div class="timeline-item starbucks">
+          
+          <div class="timeline-item python">
             <div class="timeline-content">
-              <h3>2024 – ☕ Starbucks Analysis</h3>
-              <p>Análisis de datos con Python y Pandas.</p>
+              <h3>2024 – Docker Basics</h3>
+              <p>Contenerización de aplicaciones simples.</p>
             </div>
           </div>
-  
+
           <div class="timeline-item videogamesales">
             <div class="timeline-content">
               <h3>2025 – 📊 Video Game Sales Analysis</h3>
               <p>Predicción de ventas con Machine Learning.</p>
             </div>
           </div>
+  
+          <div class="timeline-item starbucks">
+            <div class="timeline-content">
+              <h3>2026 – ☕ Starbucks Analysis</h3>
+              <p>Análisis de datos con Python y Pandas.</p>
+            </div>
+          </div>
+  
+          
   
         </div>
       </div>
