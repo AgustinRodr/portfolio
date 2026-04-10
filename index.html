@@ -7,20 +7,20 @@
   <title>Portfolio de Agustín Acosta</title>
   <meta name="description"
     content="Portfolio de Agustín Acosta - Data Analyst, Data Science y Web Development. Transformo datos en soluciones.">
-  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Open Graph (para compartir en redes) -->
   <meta property="og:title" content="Portfolio de Agustín Acosta">
-  <meta property="og:description" content="Data Analyst • Data Science • Web Development">
+  <meta property="og:description" content="Software Developer · Web Development · Automation · Data Science · Cybersecurity">
   <meta property="og:type" content="website">
   <meta property="og:image" content="images/preview.png">
-  <meta property="og:url" content="https://tu-dominio.com">
+  <meta property="og:url" content="https://my-portfolio-flame-zeta-81.vercel.app/">
   <!-- Google Fonts optimizado -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <!-- CSS principal -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colors.css">
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -40,6 +40,9 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+      <button id="theme-toggle" class="toggle-switch">
+        <span class="toggle-circle"></span>
+      </button>
       <span class="menu-toggle">&#9776;</span>
     </div>
   </nav>
@@ -51,13 +54,13 @@
   
       <!-- Tagline principal -->
       <h2 class="tagline">
-        <i class="fas fa-laptop-code"></i> Desarrollo Web que impulsa tu negocio
+        <i class="fas fa-laptop-code"></i>Full‑Stack Developer & IT Solutions 
       </h2>
       <h3 class="tagline-en">
-        <i class="fas fa-database"></i> Web Development & IT Solutions
+        <i class="fas fa-database"></i>Impulso tu negocio con tecnología
       </h3>
   
-      <!-- Subtítulo con propuesta de valor -->
+      <!-- Subtitulo con propuesta de valor -->
       <p class="subtitle">
         Desarrollo web moderno y soluciones IT a medida.
       </p>
@@ -87,7 +90,7 @@
         <a href="#projects" class="btn-primary">
           <i class="fas fa-folder-open"></i> Ver proyectos
         </a>
-        <!-- Botón con menú moderno -->
+        <!-- Boton con menu -->
         <div class="btn-dropdown">
           <button id="cv-toggle" class="btn-tertiary">
             <i class="fas fa-download"></i> Descargar CV
@@ -98,9 +101,6 @@
             <a href="assets/cv/CV_Agustin_Acosta_English.pdf" download>Resume English</a>
           </div>
         </div>
-
-
-
         <a href="#contact" class="btn-secondary">
           Contratar servicio
         </a>
@@ -113,12 +113,10 @@
   <section id="about" class="section">
     <div class="container">
       <h2>Sobre mí</h2>
-
       <div class="lang-toggle">
         <button id="btn-es">Español 🇪🇸</button>
         <button id="btn-en">English 🇬🇧</button>
       </div>
-
       <div class="about-card lang-es active">
         <h3>Español</h3>
         <p>
@@ -127,7 +125,6 @@
           Mi objetivo es aportar eficiencia y calidad en cada desafío tecnológico.
         </p>
       </div>
-
       <div class="about-card lang-en">
         <h3>English</h3>
         <p>
@@ -140,10 +137,10 @@
   </section>
 
   
-<!-- HABILIDADES -->
+  <!-- HABILIDADES -->
   <section id="skills" class="section">
     <div class="container">
-      <h2>Developer Arsenal 🛠️</h2>
+      <h2>Developer Arsenal</h2>
       <h3>💻Codebase</h3>
       <div class="swiper lenguajes-swiper">
         <div class="swiper-wrapper">
@@ -160,7 +157,7 @@
           <div class="swiper-slide skill-card csharp">
             <img src="images/logos/csharp_logo.svg" alt="C# logo" class="skill-icon">
             <p>C Sharp</p>
-            <span class="badge basico">Básico</span>
+            <span class="badge intermedio">Intermedio</span>
           </div>
           <div class="swiper-slide skill-card javascript">
             <img src="images/logos/javascript_logo.svg" alt="JavaScript logo" class="skill-icon">
@@ -225,7 +222,7 @@
             <div class="swiper-slide skill-card linux">
               <img src="images/logos/linux_logo.svg" alt="Linux logo" class="skill-icon">
               <p>Hacking</p>
-              <span class="badge avanzado">Avanzados</span>
+              <span class="badge avanzado">Avanzado</span>
             </div>
             <div class="swiper-slide skill-card postgresql">
               <img src="images/logos/postgresql_logo.svg" alt="PostgreSQL logo" class="skill-icon">
@@ -249,54 +246,51 @@
   
           <div class="timeline-item js">
             <div class="timeline-content">
-              <h3>2022 – 🌐 JavaScript</h3>
-              <p>Ingreso a la facultad, primer contacto con la programación.</p>
-            </div>
-          </div>
-  
-          <div class="timeline-item c">
-            <div class="timeline-content">
-              <h3>2022 – Inicio en C con Eclipse IDE</h3>
-              <p>Fundamentos y estructuras.</p>
-            </div>
-          </div>
-  
-          <div class="timeline-item arduino">
-            <div class="timeline-content">
-              <h3>2022 – 🔌 Arduino</h3>
-              <p>Electrónica básica en proyectos prácticos. Utilizando Tinkercad</p>
+              <h3>2022 Primeros lenguajes - JavaScript - C </h3>
+              <p>inicio en la facultad y primeros pasos en programación y electrónica básica.</p>
             </div>
           </div>
   
           <div class="timeline-item python">
             <div class="timeline-content">
-              <h3>2023 – 👾 Galaga Python</h3>
-              <p>Primer proyecto grande en Python (OOP + librerías gráficas).</p>
+              <h3>2023 – Proyectos iniciales - Python - SQL Fundamentals</h3>
+              <p>Primer proyecto grande aplicando OOP y librerías gráficas, junto con el aprendizaje de bases de datos relacionales.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-item docker">
+            <div class="timeline-content">
+              <h3>2024 – Herramientas - Bases de datos</h3>
+              <p>Docker, SQL, PostgreSQL. Introducción a la Ciberseguridad.</p>
+              <p>Exploración de tecnologías para contenerización y seguridad informática.</p>
             </div>
           </div>
           
-          <div class="timeline-item python">
+          <div class="timeline-item ml">
             <div class="timeline-content">
-              <h3>2024 – Docker Basics</h3>
-              <p>Contenerización de aplicaciones simples.</p>
+              <h3>2025–2026 – Data Science - Machine Learning</h3>
+              <p>Aplicación de Machine Learning para predicciones y análisis de datos</p>
             </div>
           </div>
 
-          <div class="timeline-item videogamesales">
+          <div class="timeline-item linux">
             <div class="timeline-content">
-              <h3>2025 – 📊 Video Game Sales Analysis</h3>
-              <p>Predicción de ventas con Machine Learning.</p>
+              <h3>2026 – Desarrollo web - Ciberseguridad</h3>
+              <p>Creación de portfolio como carta de presentación profesional y 
+                comienzo en el mundo de la seguridad informática avanzada, 
+                estudiando técnicas de hacking ético y pruebas de penetración.</p>
             </div>
           </div>
-  
-          <div class="timeline-item starbucks">
+
+          <div class="timeline-item n8n">
             <div class="timeline-content">
-              <h3>2026 – ☕ Starbucks Analysis</h3>
-              <p>Análisis de datos con Python y Pandas.</p>
+              <h3>2026 – Automatización</h3>
+              <p>n8n, Docker, Google Cloud, Google Sheets, Claude AI.</p>
+              <p>Creación de flujos automatizados y chatbots inteligentes, 
+                integrando hojas de cálculo y servicios en la nube con contenedores para procesos más eficientes y escalables.
+              </p>
             </div>
           </div>
-  
-          
   
         </div>
       </div>
@@ -320,9 +314,9 @@
               Este proyecto me permitió afianzar conceptos de OOP y diseño de videojuegos.
             </p>
             <div class="tech-stack">
-              <span class="badge">Python</span>
-              <span class="badge">Pygame</span>
-              <span class="badge">OOP</span>
+              <span class="badge python">Python</span>
+              <span class="badge pygame">Pygame</span>
+              <span class="badge oop">OOP</span>
             </div>
           </div>
         
@@ -355,9 +349,9 @@
             </p>
         
             <div class="tech-stack">
-              <span class="badge">Python</span>
-              <span class="badge">Pandas</span>
-              <span class="badge">Matplotlib</span>
+              <span class="badge python">Python</span>
+              <span class="badge pandas">Pandas</span>
+              <span class="badge matplotlib">Matplotlib</span>
             </div>
           </div>
         
@@ -381,7 +375,7 @@
         <!-- Video Game Sales Analysis -->
         <div class="project-card alt">
           <div class="project-info">
-            <h3 class="project-title">👾 📊 Video Game Sales Analysis</h3>
+            <h3 class="project-title">📊 Video Game Sales Analysis</h3>
             <p class="project-tagline">Predicción de ventas con Machine Learning.</p>
             <p class="project-description">
               Proyecto de análisis de datos de Starbucks utilizando Python y Pandas.
@@ -389,13 +383,13 @@
               explorar patrones de consumo y gasto promedio por tamaño de carrito.   
             </p>
             <div class="tech-stack">
-              <span class="badge">Python</span>
-              <span class="badge">Pandas</span>
-              <span class="badge">NumPy</span>
-              <span class="badge">Matplotlib</span>
-              <span class="badge">Seaborn</span>
-              <span class="badge">Scikit-learn</span>
-              <span class="badge">Machine Learning</span>
+              <span class="badge python">Python</span>
+              <span class="badge pandas">Pandas</span>
+              <span class="badge numpy">NumPy</span>
+              <span class="badge matplotlib">Matplotlib</span>
+              <span class="badge seaborn">Seaborn</span>
+              <span class="badge sklearn">Scikit-learn</span>
+              <span class="badge ml">Machine Learning</span>
             </div>
           </div>
           

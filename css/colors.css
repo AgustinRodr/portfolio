@@ -1,0 +1,503 @@
+:root {
+  --primary: #4da3ff;
+  --bg: #0a0f1c;
+  --text: #ffffff;
+  --nav-bg: #0A192F;
+  --text-light: #e0e0e0;
+  --accent: #00c6ff;
+  
+  --btn-video : green;
+  --blue: #3498db;
+  --bg-dark: #0a0f1c;
+  --text-main: #f5f5f5;
+  --blue: #0077ff;
+  --section-light: #0f172a;
+  --video-hover: #2ecc71;
+  --text-muted: #cbd5e1;
+  --menu-toggle-color: #ffffff; 
+  --hero-name: white;
+  --hero-bg: linear-gradient(135deg, #00c6ff, #0049a3, #4a00e0);
+  --hero-shadow: inset 0 0 20px rgba(30, 60, 114, 0.5),
+                 inset 0 0 40px rgba(42, 82, 152, 0.3),
+                 0 8px 20px rgba(0,0,0,0.3);
+  --hero-text-shadow: 0px 0px 8px rgb(0, 174, 255);
+  --hero-title-shadow: 0 0 8px #00c6ff, 0 0 16px #4a00e0;
+  /*====TAGLINE======*/
+  --tagline-color: #7bed9f;
+  --tagline-color-i: #00c6ff;
+  --subtitle-color: rgba(255,255,255,0.85);
+  --strength-shadow: 0 0 6px rgba(0,198,255,0.6);
+  --accent-hover: #00c6ff; 
+  --btn-primary-bg: #00aeef;
+  --btn-primary-text: #fff;
+  --btn-primary-hover: linear-gradient(135deg, #00c6ff, #0072ff);
+
+  --btn-secondary-bg: linear-gradient(135deg, #00bcd4, #b924dd);
+  --btn-secondary-text: #fff;
+  --btn-secondary-shadow: 0 0 12px rgba(221, 36, 118, 0.6);
+  --btn-secondary-hover: linear-gradient(135deg, #00bcd4, #b924dd);
+  --btn-secondary-shadow-hover: 0 0 18px rgba(221, 36, 118, 0.8);
+
+  --btn-tertiary-bg: linear-gradient(135deg, #00c6ff, #00ff9d);
+  --btn-tertiary-text: #fff;
+  --dropdown-bg: linear-gradient(135deg, #00c6ff, #0049a3, #4a00e0);
+  --dropdown-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  --dropdown-text: #fff;
+  --dropdown-hover-bg: rgba(255,255,255,0.1);
+  --strength-icon: #7bed9f;
+  --hero-responsive-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  --lang-border: #0077ff;
+  --lang-bg: #111827;
+  --lang-text: #fff;
+  --lang-hover-bg: #0077ff;
+  --lang-hover-shadow: 0 0 12px rgba(0,119,255,0.7);
+  /* ===== ABOUT ===== */
+  --about-bg: #0a0f1c;
+  --about-text: #f5f5f5;
+  --about-title-gradient: linear-gradient(90deg, #00c6ff, #b924dd);
+  --about-title-line: linear-gradient(90deg, #00c6ff, #b924dd);
+  /* ===== ABOUT CARD ===== */
+  --about-card-bg: linear-gradient(135deg, #111827, #1f2937);
+  --about-card-text: #fff;
+  --about-card-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  --about-card-glow: linear-gradient(135deg, #4facfe, #8e44ad);
+  /* ===== ABOUT CARD HEADINGS ===== */
+  --about-card-h3: #f5f5f5;
+  --about-card-h3-shadow: 0 0 8px rgba(0,174,239,0.7),
+                          0 0 20px rgba(0,174,239,0.5);
+
+  --about-card-h3-en: #2ecc71;
+  --about-card-h3-en-shadow: 0 0 15px rgba(46,204,113,0.8);
+
+  --about-card-p: #e0e0e0;
+  --about-card-p-shadow: 0 0 6px rgba(0,0,0,0.6);
+  /* ===== SKILLS ===== */
+  --skill-card-bg: linear-gradient(135deg, #1f2937, #4b1eff);
+  --skill-card-text: #fff;
+  --skill-card-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  --skill-card-hover-bg: #0077ff;
+  /* ===== SKILLS TITLE ===== */
+  --skills-title-gradient: linear-gradient(90deg, #00c6ff, #b924dd);
+  --skills-title-line: linear-gradient(90deg, #00c6ff, #b924dd);
+  /* ===== SKILLS SUBTITLE ===== */
+  --skills-subtitle-gradient: linear-gradient(90deg, #00c6ff, #b924dd);
+  --skills-subtitle-line: linear-gradient(90deg, #00c6ff, #b924dd);
+   /* ===== SKILLS COLORS ===== */
+  --skill-python: #3776AB;      /* Python azul oficial */
+  --skill-c: #283593;           /* C azul */
+  --skill-csharp: #68217A;      /* C#  */
+  --skill-js: #F7DF1E;          /* JS */
+  --skill-html: #c42a00;        /* HTML  */
+  --skill-css: #2965F1;         /* CSS azul */
+
+  --skill-sql: #336791;         /* SQL/PostgreSQL azul */
+  --skill-ml: #FF6F00;          /* ML naranja */
+  --skill-numpy: #013243;       /* NumPy azul oscuro */
+  --skill-mysql: #4479A1;       /* MySQL azul */
+  --skill-docker: #0db7ed;      /* Docker celeste */
+  --skill-git: #F1502F;         /* Git naranja */
+  --skill-github: #24292e;      /* GitHub gris oscuro */
+  --skill-linux: #fcc624;       /* Linux amarillo */
+  --skill-postgresql: #336791;  /* PostgreSQL azul */
+  /* ===== BADGES ===== */
+  --badge-bg: rgba(255,255,255,0.2);
+  --badge-text: #fff;
+  --badge-basico: #3498db;     
+  --badge-intermedio: #873abb; 
+  --badge-avanzado: #e67e22;   
+  /* ===== SWIPER ===== */
+  --swiper-nav-color: #ffffff;
+  --swiper-button-color: #fff; 
+  /* ===== SWIPER BULLETS ===== */
+  --swiper-bullet-color: #ffffff; 
+  --swiper-bullet-opacity: 0.6;
+  /* ===== TIMELINE ===== */
+  --timeline-card-shadow: 0 8px 20px rgba(0, 217, 255, 0.4);
+  /* ===== TIMELINE BORDER & HOVER ===== */
+  --timeline-border-gradient: linear-gradient(90deg, #00c6ff, #b924dd, #00ff9d);
+  --timeline-card-hover-shadow: 0 0 25px rgba(0, 217, 255, 0.6);
+  /* ===== TIMELINE TITLE ===== */
+  --timeline-title-gradient: linear-gradient(90deg, #00c6ff, #b924dd);
+  --timeline-title-line: linear-gradient(90deg, #00c6ff, #b924dd);
+  /* ===== TIMELINE LINE ===== */
+  --timeline-line-gradient: linear-gradient(90deg, #3532b6, #b924dd);
+  --timeline-line-shadow: 0 0 12px #b924dd;
+  /* ===== TIMELINE BULLET ===== */
+  --timeline-bullet-border: #fff; 
+  /* ===== TIMELINE BULLETS ===== */
+  --timeline-bullet-js: #F7DF1E;     
+  --timeline-bullet-python: #3776AB; 
+  --timeline-bullet-docker: #757c81; 
+  --timeline-bullet-ml: #ff7300;     
+  --timeline-bullet-n8n: #ff0000;    
+  --timeline-bullet-linux: #181717;  
+  /* ===== TIMELINE CONTENT ===== */
+  --timeline-content-bg: rgba(20, 25, 40, 0.7);
+  --timeline-content-border: rgba(0, 217, 255, 0.4);
+  --timeline-content-shadow: 0 0 12px rgba(0, 217, 255, 0.25);
+  --timeline-content-hover-shadow: 0 0 18px rgba(0, 217, 255, 0.5);
+
+  --timeline-content-h3: #ffffff;
+  --timeline-content-p: #ffffff;
+  /* ===== TIMELINE BULLET RESPONSIVE ===== */
+  --timeline-bullet-border-responsive: #fff; 
+  /* ===== TIMELINE CONTENT RESPONSIVE ===== */
+  --timeline-content-shadow-responsive: none;
+  --timeline-content-border-responsive: rgba(0, 217, 255, 0.2);
+  /* ===== PROJECT CARD ===== */
+  --card-bg-1: #111827;
+  --card-bg-2: #1f2937;
+  --project-card-hover-shadow: 0 0 15px rgba(0, 119, 255, 0.5);
+  /* ===== PROJECTS TITLE ===== */
+  --projects-title-gradient: linear-gradient(90deg, #00c6ff, #b924dd);
+  --projects-title-line: linear-gradient(90deg, #00c6ff, #b924dd);
+  --project-title-color: #00c6ff;
+  /* ===== PROJECT MEDIA ===== */
+  --project-media-border: #1f2a44;
+  --project-media-shadow: 0 0 15px rgba(0,0,0,0.4);
+  /* ===== BADGES TECH STACK ===== */
+  --badge-text: #fff;
+  --badge-python: #3776AB;
+  --badge-pandas: #0db7ed;
+  --badge-pygame: #68217A;
+  --badge-oop: #0db7ed;
+  --badge-numpy: #03536d;
+  --badge-matplotlib: #11557c;
+  --badge-seaborn: #2E8BC0;
+  --badge-sklearn: #f71e54;
+  --badge-ml: #fc7324;
+  /* ===== PROJECT BUTTONS ===== */
+  --github-bg: #2f3f87;
+  --btn-github-hover: #283779;   
+  --btn-video-hover: #2ecc71;    
+  /* ===== CAROUSEL BUTTONS ===== */
+  --carousel-btn-bg: #1f2a44; 
+  --carousel-btn-text: #fff;  
+  /* ===== CAROUSEL BUTTONS FOCUS/ACTIVE DARK ===== */
+  --carousel-btn-bg-focus: #1f2a44; 
+  --carousel-btn-shadow-focus: none; 
+  /* ===== CONTACT LINKS DARK ===== */
+  --contact-link: #4da3ff; 
+  /* ===== CONTACT SECTION DARK ===== */
+  --contact-bg: rgba(0, 0, 0, 0);
+  /* ===== CONTACT TITLE DARK ===== */
+  --contact-title-gradient: linear-gradient(
+    90deg,
+    #00c6ff,  
+    #b924dd,   
+    #ffcc00    
+  );
+  /* ===== GLOW TEXT DARK ===== */
+  --glow-text-from: 0 0 8px rgba(0,198,255,0.6); 
+  --glow-text-to: 
+    0 0 20px rgba(185,36,221,0.8),
+    0 0 40px rgba(255,204,0,0.6);
+  /* ===== CONTACT FORM DARK ===== */
+  --contact-form-bg: linear-gradient(135deg,#00c6ff,  #0049a3,  #4a00e0   );
+  --contact-form-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  --contact-form-title: #f3f4f6; 
+  --contact-label-color: #f0f0f0;       
+  --contact-input-border: #ffffff;      
+  --contact-input-text: #111827;        
+  --contact-input-bg: #f9fafb;          
+  /* ===== CONTACT FORM FOCUS DARK ===== */
+  --contact-input-border-focus: #0049a3;
+  /* ===== BTN CONTACT DARK ===== */
+  --btn-contact-text: #fff;
+  --btn-contact-bg: linear-gradient(135deg, #00bcd4, #b924dd);
+  --btn-contact-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+  --btn-contact-bg-hover: linear-gradient(135deg, #8e2de2, #2979ff);
+  --btn-contact-shadow-hover: 0 6px 16px rgba(0,0,0,0.25);
+
+  --btn-contact-shadow-active: 0 3px 8px rgba(0,0,0,0.2);
+  /* ===== ERROR DARK ===== */
+  --error-text: #ff0000e1; 
+  --error-shadow: 0 0 4px rgb(7, 7, 7);
+  /* ===== TOAST DARK ===== */
+  --toast-bg: #4CAF50; 
+  --toast-text: #fff;  
+  /* ===== FOOTER DARK ===== */
+  --footer-bg: rgb(0, 0, 0);   
+  --footer-text: #94a3b8;
+  /* ===== FOOTER LINKS DARK ===== */
+  --footer-link: #e2e8f0;       
+  --footer-link-hover: #0ea5e9;
+  /* ===== FOOTER BOTTOM DARK ===== */
+  --footer-bottom-text: #cbd5e1;   
+  --footer-bottom-border: #1e293b;
+  /* ===== SOCIAL LINKS DARK ===== */
+  --social-border: #000000;        
+  --social-icon: #e2e8f0;          
+  --social-border-hover: #0ea5e9;  
+  --social-icon-hover: #000000;
+  --social-border-focus: transparent;
+  /* Interruptor */
+  --toggle-width: 60px;
+  --toggle-height: 30px;
+  --circle-size: 24px;
+  --circle-offset: 2px;
+
+  --toggle-bg: #111827;         
+  --toggle-border: #4a90e2;      
+  --toggle-bg-active: #4a90e2;   
+  --toggle-circle-bg: #ffffff;   
+
+
+
+}
+
+.light-mode {
+  --primary: #bdbdbd;
+  --bg: #f9f9f9;          
+  --text: #ffffff;        
+  --nav-bg: #ffffff;      
+  --text-light: #333333;   
+  --accent: #dadada;      
+  --green: #2ecc71;       
+  --blue: #0077ff;
+  --bg-dark: #ffffff;
+  --menu-toggle-color: #1f2937; 
+  --card-bg-1: #ffffff;   
+  --card-bg-2: #eaeaea;
+  --section-light: #f5f5f5;
+  --github-bg: #333333;   
+  --video-hover: #27ae60;
+  --text-muted: #666666;  
+  --hero-bg: linear-gradient(135deg, #ffffff, #f3f4f6);
+
+  --hero-name: ;
+  --hero-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  --hero-text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+  --hero-title-shadow: 
+    0 2px 6px rgba(0, 0, 0, 0.15),   
+    0 0 12px rgba(37, 99, 235, 0.25);
+
+    /*====TAGLINE======*/
+  --tagline-color: #2c2c2c;
+  --tagline-color-i: #2563eb;
+  --subtitle-color: #4b5563;
+  
+  --accent-hover: #414141; 
+  --btn-primary-bg: #2563eb;
+  --btn-primary-text: #fff;
+  --btn-primary-hover: linear-gradient(135deg, #3399ff, #66ccff);
+
+  --btn-secondary-bg: linear-gradient(135deg, #000000, #374151); 
+  --btn-secondary-text: #f9fafb; 
+  --btn-secondary-shadow: 0 0 8px rgba(0, 0, 0, 0.25); 
+  --btn-secondary-hover: linear-gradient(135deg, #111827, #1f2937); 
+  --btn-secondary-shadow-hover: 0 0 12px rgba(0, 0, 0, 0.4);
+
+  /* Botón terciario */
+  --btn-tertiary-bg: linear-gradient(135deg, #0077ff, #000000); 
+  --btn-tertiary-text: #f9fafb;
+  
+  /* Dropdown */
+  --dropdown-bg: linear-gradient(135deg, #f9fafb, #e5e7eb, #d1d5db); 
+  --dropdown-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+  --dropdown-text: #111827; 
+  --dropdown-hover-bg: rgba(0,0,0,0.08); 
+
+  /* Iconos de fortalezas */
+  --strength-icon: #2563eb; 
+  --strength-shadow: 0 0 6px rgba(37, 99, 235, 0.25);
+
+  /* Hero responsive */
+  --hero-responsive-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+
+  /* Idiomas */
+  --lang-border: #000000;
+  --lang-bg: #000000; 
+  --lang-text: #ffffff; 
+  --lang-hover-bg: #1f2937; 
+  --lang-hover-shadow: 0 0 10px rgba(37,99,235,0.4); 
+
+
+  /*====ABOUT=====*/
+  --about-bg: #ffffff; 
+  --about-text: #000000; 
+  --about-title-gradient: linear-gradient(90deg, #000000,#000000);
+  --about-title-line: linear-gradient(90deg, #000000,#1f2937);
+  /* ===== ABOUT CARD ===== */
+  --about-card-bg: linear-gradient(135deg, #ffffff, #e5e7eb); 
+  --about-card-text: #000000;
+  --about-card-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  --about-card-glow: linear-gradient(135deg, #000000, #1f2937);
+  /* ===== ABOUT CARD HEADINGS ===== */
+  --about-card-h3: #111827; 
+  --about-card-h3-shadow: 0 2px 6px rgba(0, 0, 0, 0.2),0 0 10px rgba(0, 0, 0, 0.15);
+
+  --about-card-h3-en: #000000;
+  --about-card-h3-en-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+
+  --about-card-p: #000000; 
+  --about-card-p-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  /* ===== SKILLS ===== */
+  --skill-card-bg: linear-gradient(135deg, #ffffff, #d6e4ff); 
+  --skill-card-text: #111827; 
+  --skill-card-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  --skill-card-hover-bg: #3399ff;
+  /* ===== SKILLS TITLE ===== */
+  --skills-title-gradient: linear-gradient(90deg, #000000,#1f2937);
+  --skills-title-line: linear-gradient(90deg, #000000,#1f2937);
+   /* ===== SKILLS SUBTITLE ===== */
+  --skills-subtitle-gradient: linear-gradient(90deg, #000000,#000000);
+  --skills-subtitle-line: linear-gradient(90deg, #000000,#000000);
+  --skill-python: #3776AB;      /* Python azul oficial */
+  --skill-c: #283593;           /* C azul profundo */
+  --skill-csharp: #68217A;      /* C# púrpura */
+  --skill-js: #F7DF1E;          /* JS amarillo */
+  --skill-html: #c42a00;        /* HTML naranja */
+  --skill-css: #2965F1;         /* CSS azul */
+
+  --skill-sql: #336791;         /* SQL/PostgreSQL azul */
+  --skill-ml: #FF6F00;          /* ML naranja */
+  --skill-numpy: #013243;       /* NumPy azul oscuro */
+  --skill-mysql: #4479A1;       /* MySQL azul */
+  --skill-docker: #0db7ed;      /* Docker celeste */
+  --skill-git: #F1502F;         /* Git naranja */
+  --skill-github: #24292e;      /* GitHub gris oscuro */
+  --skill-linux: #fcc624;       /* Linux amarillo */
+  --skill-postgresql: #336791;
+  /* ===== BADGES ===== */
+  --badge-bg: rgba(0,0,0,0.1); 
+  --badge-text: #000000;       
+
+  --badge-basico: #818181;      
+  --badge-intermedio: #818181;  
+  --badge-avanzado:#818181;   
+  /* ===== SWIPER ===== */
+  --swiper-nav-color: #000000;
+  --swiper-button-color: #000000;
+  /* ===== SWIPER BULLETS ===== */
+  --swiper-bullet-color: #000000; 
+  --swiper-bullet-opacity: 0.5;  
+  /* ===== TIMELINE ===== */
+  --timeline-card-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  /* ===== TIMELINE BORDER & HOVER ===== */
+  --timeline-border-gradient: linear-gradient(90deg, #cecece,  #ffffff, #cecece); 
+  --timeline-card-hover-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  /* ===== TIMELINE TITLE ===== */
+  --timeline-title-gradient: linear-gradient(90deg, #000000,#1f2937);
+  --timeline-title-line: linear-gradient(90deg, #000000,#1f2937);
+  /* ===== TIMELINE LINE ===== */
+  --timeline-line-gradient: linear-gradient(90deg, #000000, #1f2937); 
+  --timeline-line-shadow: 0 0 10px #000000;
+  /* ===== TIMELINE BULLET ===== */
+  --timeline-bullet-border: #111827;
+  /* ===== TIMELINE BULLETS ===== */
+  --timeline-bullet-js: #ffe066;     
+  --timeline-bullet-python: #4a90e2; 
+  --timeline-bullet-docker: #95a5a6; 
+  --timeline-bullet-ml: #ff944d;     
+  --timeline-bullet-n8n: #e74c3c;    
+  --timeline-bullet-linux: #555555;  
+  /* ===== TIMELINE CONTENT ===== */
+  --timeline-content-bg: rgba(255, 255, 255, 0.7); 
+  --timeline-content-border: rgba(0, 0, 0, 0.35);
+  --timeline-content-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  --timeline-content-hover-shadow: 0 0 14px rgba(0, 119, 255, 0.25);
+
+  --timeline-content-h3: #000000; 
+  --timeline-content-p: #000000; 
+  /* ===== TIMELINE BULLET RESPONSIVE ===== */
+  --timeline-bullet-border-responsive: #111827; 
+  /* ===== TIMELINE CONTENT RESPONSIVE ===== */
+  --timeline-content-shadow-responsive: none; 
+  --timeline-content-border-responsive: rgba(0, 119, 255, 0.15);
+  /* ===== PROJECTS CARD ===== */
+  --card-bg-1: #f9fafb;   
+  --card-bg-2: #ffffff;   
+  --project-card-hover-shadow: 0 0 12px rgba(0, 119, 255, 0.25); 
+  /* ===== PROJECTS TITLE ===== */
+  --projects-title-gradient: linear-gradient(90deg, #000000,#000000); 
+  --projects-title-line: linear-gradient(90deg, #000000,#1f2937);
+  --project-title-color: #000000;
+  /* ===== PROJECT MEDIA ===== */
+  --project-media-border: #000000;
+  --project-media-shadow: 0 0 12px rgba(0, 0, 0, 0.35);
+  /* ===== BADGES TECH STACK ===== */
+  --badge-text: #111827; 
+  --badge-python: #4a90e2;  
+  --badge-pandas: #66d9ef;  
+  --badge-pygame: #a066cc;   
+  --badge-oop: #66d9ef;      
+  --badge-numpy: #4f6d7a;    
+  --badge-matplotlib: #5a8bb0; 
+  --badge-seaborn: #7fb3d5;  
+  --badge-sklearn: #ff6f91;  
+  --badge-ml: #ff944d;       
+  /* ===== PROJECT BUTTONS ===== */
+  --github-bg: #111827;
+  --btn-github-hover: #c0c0c0;  
+  --btn-video-hover: #646464;   
+  --btn-video: #000000;         
+
+  /* ===== CAROUSEL BUTTONS ===== */
+  --carousel-btn-bg: #e5e7eb; 
+  --carousel-btn-text: #111827;
+  /* ===== CAROUSEL BUTTONS FOCUS/ACTIVE LIGHT ===== */
+  --carousel-btn-bg-focus: #e5e7eb; 
+  --carousel-btn-shadow-focus: none; 
+  /* ===== CONTACT LINKS LIGHT ===== */
+  --contact-link: #1d4ed8;
+  /* ===== CONTACT SECTION LIGHT ===== */
+  --contact-bg: rgba(255, 255, 255, 0);
+  /* ===== CONTACT TITLE LIGHT ===== */
+  --contact-title-gradient: linear-gradient(90deg, #000000,#000000);
+  /* ===== GLOW TEXT LIGHT ===== */
+  --glow-text-from: 0 0 8px rgba(74,144,226,0.5); 
+  --glow-text-to:
+    0 0 20px rgba(66, 66, 66, 0.7), 
+    0 0 40px rgba(0, 0, 0, 0.5);
+  /* ===== CONTACT FORM LIGHT ===== */
+  --contact-form-bg: linear-gradient(135deg, #000000, #1c1c1c, #2e2e2e);
+  --contact-form-shadow: 0 4px 16px rgba(0,0,0,0.6); 
+  --contact-label-color: #ffffff;       
+  --contact-input-border: #333333;      
+  --contact-input-text: #ffffff;        
+  --contact-input-bg: #000000;          
+  /* ===== CONTACT FORM FOCUS LIGHT ===== */
+  --contact-input-border-focus: #4a90e2;
+  /* ===== BTN CONTACT LIGHT ===== */
+  --btn-contact-text: #fff;
+  --btn-contact-bg: linear-gradient(135deg, #000000, #1c1c1c);
+  --btn-contact-shadow: 0 4px 16px rgba(0,0,0,0.6);
+
+  --btn-contact-bg-hover: linear-gradient(135deg, #000000, #1c1c1c); 
+  --btn-contact-shadow-hover: 0 6px 16px rgba(0,0,0,0.6);
+  --btn-contact-shadow-active: 0 3px 8px rgba(0,0,0,0.4);
+
+  /* ===== ERROR LIGHT ===== */
+  --error-text: #ef4444;   
+  --error-shadow: 0 0 6px rgba(239,68,68,0.6);
+  /* ===== TOAST LIGHT ===== */
+  --toast-bg: #1f2937; 
+  --toast-text: #fff;
+  /* ===== FOOTER  ===== */
+  --footer-bg: #000000;          
+  --footer-text: #ffffff;        
+  --footer-link-hover: #818181;
+
+  /* ===== FOOTER BOTTOM LIGHT ===== */
+  --footer-bottom-text: #9ca3af;   
+  --footer-bottom-border: #1f2937;
+  /* ===== SOCIAL LINKS LIGHT ===== */
+  --social-border: #000000;        
+  --social-icon: #ffffff;          
+  --social-border-hover: #ffffff;
+  --social-icon-hover: #111827;
+  --social-border-focus: transparent;
+  /* ===== TOP NAV LIGHT ===== */
+  --nav-bg: #ffffff;          
+  --text: #1f2937;            
+  --text-light: #000000;      
+  /* Interruptor */
+  --toggle-bg: #f3f4f6;          
+  --toggle-border: #000000;      
+  --toggle-bg-active: #000000;   
+  --toggle-circle-bg: #111827;
+  --circle-size: 24px;
+  --circle-offset: 2px;
+}

@@ -37,6 +37,14 @@ btnEn.addEventListener('click', () => {
 });
 
 
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  toggleBtn.classList.toggle("active");
+});
+
+
 // Swiper para Lenguajes
 const swiperLenguajes = new Swiper('.lenguajes-swiper', {
   slidesPerView: 3,
