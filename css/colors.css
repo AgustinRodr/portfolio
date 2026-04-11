@@ -99,6 +99,7 @@
   --skill-github: #24292e;      /* GitHub gris oscuro */
   --skill-linux: #fcc624;       /* Linux amarillo */
   --skill-postgresql: #336791;  /* PostgreSQL azul */
+  --skill-kali: rgb(46, 18, 18);          /* Kali Linux */
   /* ===== BADGES ===== */
   --badge-bg: rgba(255,255,255,0.2);
   --badge-text: #fff;
@@ -360,6 +361,7 @@
   --skill-github: #24292e;      /* GitHub gris oscuro */
   --skill-linux: #fcc624;       /* Linux amarillo */
   --skill-postgresql: #336791;
+  --skill-kali: rgb(46, 18, 18);          /* Kali Linux */
   /* ===== BADGES ===== */
   --badge-bg: rgba(0,0,0,0.1); 
   --badge-text: #000000;       

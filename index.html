@@ -57,7 +57,7 @@
         <i class="fas fa-laptop-code"></i>Full‑Stack Developer & IT Solutions 
       </h2>
       <h3 class="tagline-en">
-        <i class="fas fa-database"></i>Impulso tu negocio con tecnología
+        <i class="fas fa-database"></i>Impulsa tu negocio con tecnología
       </h3>
   
       <!-- Subtitulo con propuesta de valor -->
@@ -83,6 +83,10 @@
           <i class="fas fa-robot"></i>
           <span>Chatbots & n8n</span>
         </div>
+        <div class="strength-item">
+          <i class="fas fa-shield-alt"></i>
+          <span>Ciberseguridad</span>
+        </div>
       </div>
   
       <!-- Botones -->
@@ -102,7 +106,7 @@
           </div>
         </div>
         <a href="#contact" class="btn-secondary">
-          Contratar servicio
+          <i class="fas fa-paper-plane"></i> Contactame
         </a>
       </div>
     </div>
@@ -117,20 +121,25 @@
         <button id="btn-es">Español 🇪🇸</button>
         <button id="btn-en">English 🇬🇧</button>
       </div>
+
+      <div class="about-photo">
+        <img src="images/foto_perfil.png" alt="Agustín Acosta" />
+      </div>
+
       <div class="about-card lang-es active">
         <h3>Español</h3>
         <p>
-          Soy desarrollador de software enfocado en crear soluciones prácticas que optimizan procesos y aportan valor. 
-          Me especializo en transformar datos en resultados claros y confiables, con documentación profesional y proyectos fáciles de mantener. 
-          Mi objetivo es aportar eficiencia y calidad en cada desafío tecnológico.
+          Soy desarrollador Full Stack con foco en automatización y soluciones prácticas. Me energiza identificar procesos repetitivos y convertirlos en flujos eficientes, ya sea con código, o con una buena integración entre sistemas.
+          Trabajo de forma metódica: documentación clara, código mantenible y proyectos que otros puedan entender sin necesidad de preguntarme. Creo que un buen developer no solo resuelve el problema de hoy, sino que no crea el problema de mañana.
+          Estoy en constante aprendizaje — últimamente sumando ciberseguridad y hacking ético a mi stack — porque entender cómo se rompen las cosas me hace construirlas mejor.
         </p>
       </div>
       <div class="about-card lang-en">
         <h3>English</h3>
         <p>
-          I am a software developer focused on creating practical solutions that optimize processes and deliver value. 
-          I specialize in transforming data into clear and reliable results, with professional documentation and projects that are easy to maintain. 
-          My goal is to bring efficiency and quality to every technological challenge.
+          I'm a Full Stack developer focused on automation and practical solutions. I get energized by spotting repetitive processes and turning them into efficient workflows — whether through code, or smart system integrations.
+          I work methodically: clean documentation, maintainable code, and projects others can understand without having to ask me. I believe a good developer doesn't just solve today's problem — they don't create tomorrow's.
+          I'm constantly learning — lately adding cybersecurity and ethical hacking to my stack — because understanding how things break makes me better at building them.
         </p>
       </div>
     </div>
@@ -224,6 +233,11 @@
               <p>Hacking</p>
               <span class="badge avanzado">Avanzado</span>
             </div>
+            <div class="swiper-slide skill-card kali">
+              <img src="images/logos/kali_logo.svg" alt="Kali logo" class="skill-icon">
+              <p>Kali Linux</p>
+              <span class="badge avanzado">Intermedio</span>
+            </div>
             <div class="swiper-slide skill-card postgresql">
               <img src="images/logos/postgresql_logo.svg" alt="PostgreSQL logo" class="skill-icon">
               <p>PostgreSQL</p>
@@ -279,6 +293,7 @@
               <p>Creación de portfolio como carta de presentación profesional y 
                 comienzo en el mundo de la seguridad informática avanzada, 
                 estudiando técnicas de hacking ético y pruebas de penetración.</p>
+              <p>Certificado: Ciberseguridad y Hacking Ético — Técnicas de detección de vulnerabilidades y defensa digital.</p>
             </div>
           </div>
 
@@ -330,9 +345,9 @@
             </div>
           
             <div class="project-links">
-              <a href="under-construction.html" class="btn btn-demo">Ver proyecto</a>
+              <!-- <a href="under-construction.html" class="btn btn-demo">Ver proyecto</a> -->
               <a href="https://github.com/AgustinRodr/galaga_python" class="btn btn-github">Ver código en GitHub</a>
-              <a href="under-construction.html" class="btn btn-video">Ver demo en video</a>
+              <!-- <a href="under-construction.html" class="btn btn-video">Ver demo en video</a> -->
             </div>
           </div>
         </div>
@@ -343,9 +358,8 @@
             <h3 class="project-title">☕ Starbucks Analysis</h3>
             <p class="project-tagline">Dashboard interactivo con Pandas y visualización.</p>
             <p class="project-description">
-              Proyecto de análisis de datos de Starbucks utilizando Python y Pandas.
-              Incluye visualizaciones con Matplotlib y un dashboard interactivo para
-              explorar patrones de consumo y gasto promedio por tamaño de carrito.
+              Análisis de datos de consumo de Starbucks con EDA completo, limpieza, encoding y modelo Random Forest.
+              Conclusión: El modelo predice el gasto total con R²=0.97 y RMSE=1.02. Los principales impulsores son el tamaño del carrito, el canal Mobile App y las personalizaciones.
             </p>
         
             <div class="tech-stack">
@@ -364,7 +378,7 @@
             </div>
             <!-- Botones centrados debajo -->
             <div class="project-links">
-              <a href="under-construction.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
+              <!-- <a href="under-construction.html" target="_blank" class="btn btn-demo">Ver proyecto</a> -->
               <a href="https://github.com/AgustinRodr/starbucks_analysis" target="_blank" class="btn btn-github">
               Ver código en GitHub
               </a>
@@ -378,9 +392,10 @@
             <h3 class="project-title">📊 Video Game Sales Analysis</h3>
             <p class="project-tagline">Predicción de ventas con Machine Learning.</p>
             <p class="project-description">
-              Proyecto de análisis de datos de Starbucks utilizando Python y Pandas.
-              Incluye visualizaciones con Matplotlib y un dashboard interactivo para
-              explorar patrones de consumo y gasto promedio por tamaño de carrito.   
+              Análisis de 16.540 registros de ventas de videojuegos hasta 2020. EDA, visualizaciones por región 
+              y plataforma, y comparación de modelos de regresión (Lineal, Ridge y Random Forest).
+              Conclusión: El éxito está concentrado en pocos títulos — la mediana es 0.17M de unidades pero el 
+              máximo llega a 82.74M. Las ventas regionales solas explican solo el 37% de la variabilidad global.
             </p>
             <div class="tech-stack">
               <span class="badge python">Python</span>
@@ -402,7 +417,7 @@
             </div>
             <!-- Botones centrados debajo -->
             <div class="project-links">
-              <a href="under-construction.html" target="_blank" class="btn btn-demo">Ver proyecto</a>
+              <!-- <a href="under-construction.html" target="_blank" class="btn btn-demo">Ver proyecto</a> -->
               <a href="https://github.com/AgustinRodr/video_games_sales_analisys" target="_blank" class="btn btn-github">
               Ver código en GitHub
               </a>

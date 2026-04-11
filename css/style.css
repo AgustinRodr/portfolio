@@ -597,6 +597,21 @@ body {
   }
 }
 
+.about-photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 10%;
+  border: 3px solid var(--accent);
+}
+
 /* ===== ABOUT SECTION ===== */
 #network {
   position: absolute;
@@ -928,6 +943,7 @@ body {
 .skill-card.github { background-color: var(--skill-github); }  
 .skill-card.linux { background-color: var(--skill-linux);  }
 .skill-card.postgresql { background-color: var(--skill-postgresql); } 
+.skill-card.kali { background-color: var(--skill-kali);  }
 
 /* Badges */
 .badge {
