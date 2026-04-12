@@ -150,19 +150,22 @@ body {
 
 /* ===== HERO / HEADER ===== */
 .hero-box {
+  position: relative;
   border-radius: 16px;
   padding: 60px 40px;
   margin: 140px auto;
   max-width: 900px;  
   text-align: center;
   color: var(--text);
-  background: var(--hero-bg);
-  /* Glow interno */
   box-shadow: var(--hero-shadow);
+  overflow: hidden;
   opacity: 0;
   transform: translateY(20px);
   animation: slideUp 1s ease forwards;
-  animation-delay: 0.5s; /* medio segundo después */
+  animation-delay: 0.5s;
+  background: linear-gradient(100deg, #0a0f1c, #0049a3, #0a0f1c);
+  background-size: 400% 400%; /* más grande para que se pueda mover */
+  animation: slideUp 1s ease forwards, glowShift 15s ease-in-out infinite;
 }
 
 @keyframes slideUp {
@@ -171,6 +174,15 @@ body {
     transform: translateY(0);
   }
 }
+
+@keyframes glowShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
 
 .hero-name {
   font-family: 'Montserrat', sans-serif;
@@ -432,6 +444,8 @@ body {
     max-width: 83%; 
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    background-size: 200% 200%; /* menos intenso */
+    animation: slideUp 1s ease forwards, glowShift 20s ease-in-out infinite;
   }
 
   .hero-name {
@@ -609,7 +623,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   object-position: center 10%;
-  border: 3px solid var(--accent);
+  border: 3px solid var(--about-img);
 }
 
 /* ===== ABOUT SECTION ===== */
@@ -1573,7 +1587,10 @@ body {
 .tech-stack .badge.pandas { background-color: var(--badge-pandas); }       
 .tech-stack .badge.pygame { background-color: var(--badge-pygame); }    
 .tech-stack .badge.oop { background-color: var(--badge-oop); }         
-.tech-stack .badge.numpy { background-color: var(--badge-numpy); }       
+.tech-stack .badge.numpy { background-color: var(--badge-numpy); } 
+.tech-stack .badge.flask { background-color: var(--badge-flask); }         
+.tech-stack .badge.sqlite { background-color: var(--badge-sqlite); }
+.tech-stack .badge.chartjs { background-color: var(--badge-chartjs); }         
 .tech-stack .badge.matplotlib { background-color: var(--badge-matplotlib); }   
 .tech-stack .badge.seaborn { background-color: var(--badge-seaborn); }      
 .tech-stack .badge.sklearn { background-color: var(--badge-sklearn); }     

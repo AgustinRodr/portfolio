@@ -9,11 +9,19 @@
     content="Portfolio de Agustín Acosta - Data Analyst, Data Science y Web Development. Transformo datos en soluciones.">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Open Graph (para compartir en redes) -->
-  <meta property="og:title" content="Portfolio de Agustín Acosta">
+  <meta property="og:title" content="Agustín Acosta Rodriguez — Full-Stack Developer & IT Solutions">
   <meta property="og:description" content="Software Developer | Web Development | Automation | Data Science | Cybersecurity">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/preview.png">
+  <meta property="og:image" content="https://my-portfolio-flame-zeta-81.vercel.app/images/og-preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta property="og:url" content="https://my-portfolio-flame-zeta-81.vercel.app/">
+  <meta property="og:locale" content="es_AR">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agustín Acosta Rodriguez — Full-Stack Developer & IT Solutions">
+  <meta name="twitter:description" content="Software Developer | Web Development | Automation | Data Science | Cybersecurity">
+  <meta name="twitter:image" content="https://my-portfolio-flame-zeta-81.vercel.app/images/og-preview.png">
   <!-- Google Fonts optimizado -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,8 +109,8 @@
             <i class="fas fa-chevron-down"></i>
           </button>
           <div id="cv-menu" class="dropdown-menu">
-            <a href="assets/cv/CV_Agustin_Acosta_Español.pdf" download>CV Español</a>
-            <a href="assets/cv/CV_Agustin_Acosta_English.pdf" download>Resume English</a>
+            <a href="assets/cv/CV_Agustin_Acosta_ES.pdf" download>CV Español</a>
+            <a href="assets/cv/Resume_Agustin_Acosta.pdf" download>Resume English</a>
           </div>
         </div>
         <a href="#contact" class="btn-secondary">
@@ -318,39 +326,44 @@
       <h2>Proyectos</h2>
    
       <div class="projects-grid">
-  
+        
+        <!--- IT Monitor Pro --->
         <div class="project-card alt">
-          <!-- Columna izquierda: texto -->
           <div class="project-info">
-            <h3 class="project-title">👾 Galaga Python</h3>
-            <p class="project-tagline">Videojuego retro en Python con OOP.</p>
+            <h3 class="project-title">💻 Monitoring System</h3>
+            <p class="project-tagline">El pulso de tu infraestructura</p>
             <p class="project-description">
-              Implementado con Pygame, incluye gestión de sprites, colisiones y lógica de niveles.
-              Este proyecto me permitió afianzar conceptos de OOP y diseño de videojuegos.
+              Sistema web de supervisión que centraliza métricas y estados de equipos/servicios en un dashboard 
+              interactivo, con autenticación y almacenamiento en base de datos. Está pensado para IT Support y 
+              administración de sistemas, mostrando en tiempo real información clave para detectar incidentes y 
+              tomar decisiones rápidas.
             </p>
+
             <div class="tech-stack">
               <span class="badge python">Python</span>
-              <span class="badge pygame">Pygame</span>
-              <span class="badge oop">OOP</span>
+              <span class="badge flask">Flask</span>
+              <span class="badge sqlite">SQLite</span>
+              <span class="badge chartjs">Chart.js</span>
             </div>
           </div>
-        
+
           <!-- Columna derecha: imagen -->
           <div class="project-media">
-            <img id="galaga-image" src="images/projects/galaga_screenshoot1.png" alt="Galaga Python Screenshot">
+            <img id="monitoring-image" src="images/projects/monitoring_dashboard1.png" alt="Monitoring System Screenshot">
         
             <div class="carousel-controls">
-              <button class="galaga-prev">◀</button>
-              <button class="galaga-next">▶</button>
+              <button class="monitoring-prev">◀</button>
+              <button class="monitoring-next">▶</button>
             </div>
           
             <div class="project-links">
               <!-- <a href="under-construction.html" class="btn btn-demo">Ver proyecto</a> -->
-              <a href="https://github.com/AgustinRodr/galaga_python" class="btn btn-github">Ver código en GitHub</a>
+              <a href="https://github.com/AgustinRodr/monitoring_system" class="btn btn-github">Ver código en GitHub</a>
               <!-- <a href="under-construction.html" class="btn btn-video">Ver demo en video</a> -->
             </div>
           </div>
-        </div>
+
+        </div>        
 
         <!-- Starbucks Analysis -->
         <div class="project-card alt">
@@ -422,6 +435,40 @@
               Ver código en GitHub
               </a>
             </div>
+          </div>
+        </div>
+
+        <div class="project-card alt">
+          <!-- Columna izquierda: texto -->
+          <div class="project-info">
+            <h3 class="project-title">👾 Galaga Python</h3>
+            <p class="project-tagline">Videojuego retro en Python con OOP.</p>
+            <p class="project-description">
+              Implementado con Pygame, incluye gestión de sprites, colisiones y lógica de niveles.
+              Este proyecto me permitió afianzar conceptos de OOP y diseño de videojuegos.
+            </p>
+            <div class="tech-stack">
+              <span class="badge python">Python</span>
+              <span class="badge pygame">Pygame</span>
+              <span class="badge oop">OOP</span>
+            </div>
+        </div>
+        
+          <!-- Columna derecha: imagen -->
+          <div class="project-media">
+            <img id="galaga-image" src="images/projects/galaga_screenshoot1.png" alt="Galaga Python Screenshot">
+        
+            <div class="carousel-controls">
+              <button class="galaga-prev">◀</button>
+              <button class="galaga-next">▶</button>
+            </div>
+          
+            <div class="project-links">
+              <!-- <a href="under-construction.html" class="btn btn-demo">Ver proyecto</a> -->
+              <a href="https://github.com/AgustinRodr/galaga_python" class="btn btn-github">Ver código en GitHub</a>
+              <!-- <a href="under-construction.html" class="btn btn-video">Ver demo en video</a> -->
+            </div>
+          </div>
         </div>
 
       </div>

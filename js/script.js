@@ -103,6 +103,15 @@ function createCarousel(imgId, images, prevClass, nextClass) {
   });
 }
 
+// VideoGameSales
+const monitoringImages = [
+  "images/projects/monitoring_dashboard1.png",
+  "images/projects/monitoring_dashboard2.png",
+  "images/projects/monitoring_dashboard3.png",
+  "images/projects/monitoring_dashboard4.png"
+];
+createCarousel("monitoring-image", monitoringImages, ".monitoring-prev", ".monitoring-next");
+
 // Galaga
 const galagaImages = [
   "images/projects/galaga_screenshoot1.png",
