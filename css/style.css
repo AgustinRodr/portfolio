@@ -163,7 +163,7 @@ body {
   transform: translateY(20px);
   animation: slideUp 1s ease forwards;
   animation-delay: 0.5s;
-  background: linear-gradient(100deg, #0a0f1c, #0049a3, #0a0f1c);
+  background: var(--hero-bg);
   background-size: 400% 400%; /* más grande para que se pueda mover */
   animation: slideUp 1s ease forwards, glowShift 15s ease-in-out infinite;
 }

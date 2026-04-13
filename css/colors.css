@@ -269,7 +269,7 @@
   --github-bg: #333333;   
   --video-hover: #27ae60;
   --text-muted: #666666;  
-  --hero-bg: linear-gradient(135deg, #ffffff, #f3f4f6);
+  --hero-bg: linear-gradient(135deg, #f9fafb, #dddddd);
 
   --hero-name: ;
   --hero-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
